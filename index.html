@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DreamK</title>
+  <link rel="icon"href="icon/Dreamk.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+</head>
+<body>
+
+    <!-- Inicio da barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex align-items-center">
+      <div class="container-fluid col-11 m-auto ">
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="navbar-brand" href="#">DreamK</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#sobre-nos">Quem somos</a>
+            <a class="nav-link" href="#nosso-trabalho">Nosso trabalho</a>
+            <a class="nav-link" href="#forms">Faça seu orçamento</a>
+            <a class="nav-link" href="#contato">Contato</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+  <!-- Fim da barra de navegação --------------------------------------------------------------------------------------------------------------->
+
+
+  <!-- Inicio do carrosel --------------------------------------------------------------------------------------------------------------------->
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/img1.jpeg" class="d-block w-100 img-fluid" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img2.jpg" class="d-block w-100 img-fluid" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img3.jpeg" class="d-block w-100 img-fluid" alt="Third slide">
+      </div>
+      <!-- Adicione mais imagens aqui, se necessário -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+   <!-- Fim do carrosel --------------------------------------------------------------------------------------------------------------------->
+
+
+  <script>
+    // Função para trocar as imagens do carrossel a cada 5 segundos
+    function trocarImagens() {
+      const carousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
+        interval: 5000, // Define o intervalo em milissegundos (5 segundos)
+      });
+    }
+
+    // Chama a função para trocar as imagens assim que a página carrega
+    document.addEventListener("DOMContentLoaded", trocarImagens);
+  </script>
+ 
+  <div id="sobre-nos" class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div>
+        <p class="fs-1 text-center">Experiências Incríveis</p>
+        <p class="fs-3">Sempre fascinado pelo mundo das bebidas, coquetéis e a arte de encantar as pessoas com suas 
+            habilidades de bartender. Desde cedo, ele trabalhava em bares, onde aprimorou suas técnicas e desenvolveu um
+             verdadeiro talento para criar cocktails únicos e saborosos.</p>
+    </div>
+</div>
+
+  <!-- Inicio dos card ---------------------------------------------------------------------------------------------------------------------->
+  <div id="nosso-trabalho" class="row row-cols-3 row-cols-md-3 g-8">
+    <!------------------------- inicio desse card---------------------------------------------------->
+    <div class="card" style="width: 18rem;  margin-right: 23px; margin-bottom: 10px;">
+        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    <!--- Fim desse card-->
+    <div class="card" style="width: 18rem;  margin-right: 23px; margin-bottom: 10px;">
+        <img src="img/DSC_0025.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+        <img src="img/DSC_0494.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+  </div>
+  <!-- Fim dos card --------------------------------------------------------------------------------------------------------------------------->
+
+
+  <!---- Forms -------------------------------------------------------------------------------------------------------------------->
+  <div id="forms" class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;" method="POST" action="/enviar">
+    <form class="col-12 col-md-6 bg-dark text-white p-5">
+      <!-- Restante dos campos do formulário -->
+      <div class="mb-3">
+        <label for="email1" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">email@email.com</div>
+      </div>
+      <div class="mb-3">
+        <label for="phoneInput" class="form-label">Número de telefone</label>
+        <input type="tel" class="form-control" id="phoneInput" name="phone">
+      </div>
+      <div class="mb-3">
+        <label for="textarea1" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="textarea1" rows="3"></textarea>
+      </div>
+  
+      <!-- Botão para enviar o formulário -->
+      <button id="btnEnviar" type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+  
+  <script>
+    document.getElementById("btnEnviar").addEventListener("click", function(event) {
+      event.preventDefault(); // Evita o envio do formulário padrão
+  
+      // Captura os valores dos campos do formulário
+      var email = document.getElementById("email1").value;
+      var phone = document.getElementById("phoneInput").value;
+      var message = document.getElementById("textarea1").value;
+  
+      // Formata a mensagem a ser enviada para o WhatsApp
+      var formattedMessage = "Olá!\n\nEstou interessado nos seus serviços e gostaria de solicitar um orçamento.\n\nDetalhes do contato:\nE-mail: " + email + "\nTelefone: " + phone + "\n\nMensagem:\n" + message;
+  
+      // Cria a URL com os dados para o WhatsApp
+      var whatsappURL = "https://api.whatsapp.com/send?phone=5555999911268&text=" + encodeURIComponent(formattedMessage);
+  
+      // Redireciona o usuário para a URL do WhatsApp
+      window.location.href = whatsappURL;
+    });
+  </script>
+  
+  <!------------------------- fim do forms -=---------------------------------------------------------------------------------------------->
+
+  <!--------------------- Contato----------------------------------------------------------------------------------------------------------------->
+
+  <div id="contato" class="container-fluid d-flex flex-column justify-content-center align-items-center col-11 m-auto" style="height: 100vh;">
+    <div style="display: flex; gap: 323px; margin-bottom: 10px;">
+      <a href="https://api.whatsapp.com/send?phone=5555999911268&text=Ol%C3%A1!%0A%0AEstou%20planejando%20um%20evento%20especial%20e%20estou%20interessado%20em%20contratar%20servi%C3%A7os%20de%20drinks,%20coquet%C3%A9is%20e%20bares%20para%20torn%C3%A1-lo%20ainda%20mais%20memor%C3%A1vel.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento.%0A%0AAqui%20est%C3%A3o%20alguns%20detalhes%20sobre%20o%20evento:%0ATipo%20de%20evento:%20%5Bcasamento/anivers%C3%A1rio/festa%20corporativa/etc.%5D%0AData%20do%20evento:%20%5Bdata%20desejada%20do%20evento%5D%0ALocal%20do%20evento:%20%5Blocal%20do%20evento%5D%0AN%C3%BAmero%20de%20convidados:%20%5Bn%C3%BAmero%20aproximado%20de%20convidados%5D%0A%0AEstou%20procurando%20uma%20variedade%20de%20op%C3%A7%C3%B5es%20de%20bebidas,%20desde%20coquet%C3%A9is%20cl%C3%A1ssicos%20at%C3%A9%20cria%C3%A7%C3%B5es%20exclusivas.%20Al%C3%A9m%20disso,%20adoraria%20saber%20sobre%20as%20op%C3%A7%C3%B5es%20de%20bares%20dispon%C3%ADveis%20e%20os%20servi%C3%A7os%20adicionais%20oferecidos,%20como%20equipe%20de%20bartenders,%20equipamentos%20e%20decora%C3%A7%C3%B5es.%0A%0APor%20favor,%20envie-me%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis,%20os%20pre%C3%A7os%20dos%20pacotes%20e%20qualquer%20outra%20informa%C3%A7%C3%A3o%20relevante%20para%20que%20eu%20possa%20avaliar%20e%20planejar%20o%20meu%20evento%20adequadamente.%0A%0AAgrade%C3%A7o%20antecipadamente%20pela%20sua%20aten%C3%A7%C3%A3o%20e%20aguardo%20ansiosamente%20para%20receber%20o%20seu%20or%C3%A7amento!%0A%0AAtenciosamente,%0A%5BSeu%20Nome%5D">
+        <i class="fab fa-whatsapp" style="font-size: 150px; color:#39f040;"></i>
+      </a>
+      <a href="https://www.instagram.com/lusca_martinez/" class="text-primary">
+        <i class="fab fa-instagram" style="font-size: 150px; color:#000000;"></i>
+      </a>
+  
+      <a href="https://www.facebook.com/lucas.martinez.1217727" class="text-primary">
+        <i class="fab fa-facebook" style="font-size: 150px;"></i>
+      </a>
+    </div>
+  </div>
+
+
+<div>
+  <footer style="background-color: #333;" class="page-footer font-snall blue p-5">
+    <div class="text-center ">
+      <a href="https://www.instagram.com/lusca_martinez/">© 2023 copyright: Lusca</a>
+    </div>
+  </footer>
+</div>
+
+  
+  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
