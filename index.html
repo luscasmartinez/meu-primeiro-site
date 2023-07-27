@@ -28,7 +28,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#sobre-nos">Quem somos</a>
             <a class="nav-link" href="#nosso-trabalho">Nosso trabalho</a>
-            <a class="nav-link" href="#forms">Faça seu orçamento</a>
+            <a class="nav-link" href="#forms">Peça seu orçamento</a>
             <a class="nav-link" href="#contato">Contato</a>
           </div>
         </div>
@@ -202,23 +202,35 @@
   <!---- Forms -------------------------------------------------------------------------------------------------------------------->
   <div id="forms" class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;" method="POST" action="/enviar">
     <form class="col-12 col-md-6 bg-dark text-white p-5">
-      <!-- Restante dos campos do formulário -->
       <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
-        <input type="email" class="form-control" id="nome" aria-describedby="nomeHelp">
+        <input type="email" class="form-control" id="nome"  placeholder="Lusca Martin">
       </div>
+
       <div class="mb-3">
         <label for="email1" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">email@email.com</div>
+        <input type="email" class="form-control" id="email1" placeholder="email@email.com">
       </div>
+
       <div class="mb-3">
         <label for="phoneInput" class="form-label">Número de telefone</label>
-        <input type="tel" class="form-control" id="phoneInput" name="phone">
+        <input type="tel" class="form-control" id="phoneInput" name="phone" placeholder="(55) 99999-9999" maxlength="11" required>
+        <small class="form-text text-muted">Informe apenas números (mínimo 10 dígitos e máximo 11 dígitos).</small>
       </div>
+      
+      <script>
+        const phoneInput = document.getElementById("phoneInput");
+      
+        phoneInput.addEventListener("input", function(event) {
+          const inputValue = event.target.value;
+          event.target.value = inputValue.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+        });
+      </script>
+
       <div class="mb-3">
         <label for="textarea1" class="form-label">Mensagem</label>
-        <textarea class="form-control" id="textarea1" rows="3"></textarea>
+        <textarea class="form-control" id="textarea1" rows="3" placeholder="Aniversário, formatura, inaguração... 
+Número de pessoas: 50"></textarea>
       </div>
 
       <div class="mb-3">
