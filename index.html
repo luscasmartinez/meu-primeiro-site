@@ -246,23 +246,7 @@ Número de pessoas: 50"></textarea>
   </div>
   
   <script>
-    document.getElementById("btnEnviar").addEventListener("click", function(event) {
-      event.preventDefault(); // Evita o envio do formulário padrão
-  
-      // Captura os valores dos campos do formulário
-      var email = document.getElementById("email1").value;
-      var phone = document.getElementById("phoneInput").value;
-      var message = document.getElementById("textarea1").value;
-  
-      // Formata a mensagem a ser enviada para o WhatsApp
-      var formattedMessage = "Olá!\n\nEstou interessado nos seus serviços e gostaria de solicitar um orçamento.\n\nDetalhes do contato:\nE-mail: " + email + "\nTelefone: " + phone + "\n\nMensagem:\n" + message;
-  
-      // Cria a URL com os dados para o WhatsApp
-      var whatsappURL = "https://api.whatsapp.com/send?phone=5555999911268&text=" + encodeURIComponent(formattedMessage);
-  
-      // Redireciona o usuário para a URL do WhatsApp
-      window.location.href = whatsappURL;
-    });
+    
   </script>
   
   <!------------------------- fim do forms -=---------------------------------------------------------------------------------------------->
