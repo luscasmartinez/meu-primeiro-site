@@ -34,8 +34,8 @@ public class FormularioController {
     }
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
-    @PostMapping(value = "/enviarFormulario", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public void receberFormulario(@RequestBody Formulario formulario){
+    @PostMapping(value = "/enviarFormulario", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void receberFormulario(@RequestBody Formulario formulario) {
         formularioRepository.save(formulario);
     }
 }

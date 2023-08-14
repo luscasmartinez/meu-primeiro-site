@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DreamK</title>
-  <link rel="icon"href="icon/Dreamk.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="icon" href="icon/Dreamk.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 </head>
+
 <body>
 
-    <!-- Inicio da barra de navegação -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex align-items-center">
-      <div class="container-fluid col-11 m-auto ">
-        
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        ></button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="navbar-brand" href="#">DreamK</a>
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#sobre-nos">Quem somos</a>
-            <a class="nav-link" href="#nosso-trabalho">Nosso trabalho</a>
-            <a class="nav-link" href="#forms">Peça seu orçamento</a>
-            <a class="nav-link" href="#contato">Contato</a>
-          </div>
+  <!-- Inicio da barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex align-items-center">
+    <div class="container-fluid col-11 m-auto ">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="navbar-brand" href="#">DreamK</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#sobre-nos">Quem somos</a>
+          <a class="nav-link" href="#nosso-trabalho">Nosso trabalho</a>
+          <a class="nav-link" href="#forms">Peça seu orçamento</a>
+          <a class="nav-link" href="#contato">Contato</a>
+          <a class="nav-link" href="#login-section" id="loginLink">Login ADM</a>
         </div>
       </div>
-    </nav>
-    
+    </div>
+  </nav>
+
   <!-- Fim da barra de navegação --------------------------------------------------------------------------------------------------------------->
 
 
   <!-- Inicio do carrosel --------------------------------------------------------------------------------------------------------------------->
 
-  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/img1.jpeg" class="d-block w-100 img-fluid" alt="First slide">
@@ -53,22 +50,22 @@
       </div>
       <!-- Adicione mais imagens aqui, se necessário -->
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-   <!-- Fim do carrosel --------------------------------------------------------------------------------------------------------------------->
+  <!-- Fim do carrosel --------------------------------------------------------------------------------------------------------------------->
 
 
   <script>
     // Função para trocar as imagens do carrossel a cada 5 segundos
     function trocarImagens() {
-      const carousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
+      const carousel = new bootstrap.Carousel(document.getElementById('carousel'), {
         interval: 5000, // Define o intervalo em milissegundos (5 segundos)
       });
     }
@@ -76,135 +73,146 @@
     // Chama a função para trocar as imagens assim que a página carrega
     document.addEventListener("DOMContentLoaded", trocarImagens);
   </script>
- 
+
   <div id="sobre-nos" class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
     <div>
-        <p class="fs-1 text-center">Experiências Incríveis</p>
-        <p class="fs-3">Sempre fascinado pelo mundo das bebidas, coquetéis e a arte de encantar as pessoas com suas 
-            habilidades de bartender. Desde cedo, ele trabalhava em bares, onde aprimorou suas técnicas e desenvolveu um
-             verdadeiro talento para criar cocktails únicos e saborosos.</p>
+      <p class="fs-1 text-center">Experiências Incríveis</p>
+      <p class="fs-3">Sempre fascinado pelo mundo das bebidas, coquetéis e a arte de encantar as pessoas com suas
+        habilidades de bartender. Desde cedo, ele trabalhava em bares, onde aprimorou suas técnicas e desenvolveu um
+        verdadeiro talento para criar cocktails únicos e saborosos.</p>
     </div>
-</div>
+  </div>
 
   <!-- Inicio dos card ---------------------------------------------------------------------------------------------------------------------->
   <div id="nosso-trabalho" class="row row-cols-3 row-cols-md-3 g-8 justify-content-center">
     <!------------------------- inicio desse card---------------------------------------------------->
     <!-- Inicio dos card ---------------------------------------------------------------------------------------------------------------------->
-<div class="card" style="width: 18rem;  margin-right: 23px; margin-bottom: 10px;">
-  <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Minha Terra Tem o Céu Azul</h5>
-    <p class="card-text">É mais do que apenas uma bebida, é uma experiência sensorial que celebra os sabores autênticos
-       dessa terra encantada. A cachaça escolhida com carinho representa a tradição e a paixão do povo local, enquanto o 
-       licor de curaçao azul simboliza o céu que abraça a todos com sua imensidão cintilante.</p>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal">
-      Veja mais
-    </button>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="cardModalLabel">Informações Adicionais</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Conteúdo adicional do card aqui -->
-        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+    <div class="card" style="width: 18rem;  margin-right: 23px; margin-bottom: 10px;">
+      <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
         <h5 class="card-title">Minha Terra Tem o Céu Azul</h5>
-        <p class="card-text">
-          <ol class="list-group list-group-numbered">
-            <li class="list-group-item">50 ml de cachaça (ou substitua por vodka, se preferir)</li>
-            <li class="list-group-item">30 ml de licor de curaçao azul (para dar cor e sabor cítrico)</li>
-            <li class="list-group-item">20 ml de suco de limão fresco</li>
-          </ol>
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-        <!-- Adicione aqui qualquer botão ou link adicional que você queira -->
+        <p class="card-text">É mais do que apenas uma bebida, é uma experiência sensorial que celebra os sabores
+          autênticos
+          dessa terra encantada. A cachaça escolhida com carinho representa a tradição e a paixão do povo local,
+          enquanto o
+          licor de curaçao azul simboliza o céu que abraça a todos com sua imensidão cintilante.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cardModal">
+          Veja mais
+        </button>
       </div>
     </div>
-  </div>
-</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cardModalLabel">Informações Adicionais</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Conteúdo adicional do card aqui -->
+            <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Minha Terra Tem o Céu Azul</h5>
+            <p class="card-text">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">50 ml de cachaça (ou substitua por vodka, se preferir)</li>
+              <li class="list-group-item">30 ml de licor de curaçao azul (para dar cor e sabor cítrico)</li>
+              <li class="list-group-item">20 ml de suco de limão fresco</li>
+            </ol>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <!-- Adicione aqui qualquer botão ou link adicional que você queira -->
+          </div>
+        </div>
+      </div>
+    </div>
     <!--- Fim desse card-->
     <div class="card" style="width: 18rem;  margin-right: 23px; margin-bottom: 10px;">
-        <img src="img/DSC_0025.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Veja mais</a>
-        </div>
+      <img src="img/DSC_0025.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Veja mais</a>
       </div>
-      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
-        <img src="img/DSC_0494.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Veja mais</a>
-        </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+      <img src="img/DSC_0494.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Veja mais</a>
       </div>
-      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
-        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Veja mais</a>
-        </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+      <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Veja mais</a>
       </div>
-      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
-        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Veja mais</a>
-        </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+      <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Veja mais</a>
       </div>
-      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
-        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Veja mais</a>
-        </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+      <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Veja mais</a>
       </div>
-      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
-        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Veja mais</a>
-        </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+      <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Veja mais</a>
       </div>
-      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
-        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Veja mais</a>
-        </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+      <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Veja mais</a>
       </div>
-      <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
-        <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Veja mais</a>
-        </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-right: 23px; margin-bottom: 10px;">
+      <img src="img/DSC_0014.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Veja mais</a>
       </div>
+    </div>
   </div>
   <!-- Fim dos card --------------------------------------------------------------------------------------------------------------------------->
 
 
   <!---- Forms -------------------------------------------------------------------------------------------------------------------->
-  <div id="forms" class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;" method="POST" action="/enviar">
-    <form class="col-12 col-md-6 bg-dark text-white p-5">
+  <div id="forms" class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;"
+    method="POST" action="/enviar">
+    <form id="meuFormulario" class="col-12 col-md-6 bg-dark text-white p-5">
       <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
-        <input type="email" class="form-control" id="nome"  placeholder="Lusca Martin">
+        <input type="name" class="form-control" id="nome" placeholder="Lusca Martin">
       </div>
 
       <div class="mb-3">
@@ -214,14 +222,15 @@
 
       <div class="mb-3">
         <label for="phoneInput" class="form-label">Número de telefone</label>
-        <input type="tel" class="form-control" id="phoneInput" name="phone" placeholder="(55) 99999-9999" maxlength="11" required>
+        <input type="tel" class="form-control" id="phoneInput" name="phone" placeholder="(55) 99999-9999" maxlength="11"
+          required>
         <small class="form-text text-muted">Informe apenas números (mínimo 10 dígitos e máximo 11 dígitos).</small>
       </div>
-      
+
       <script>
         const phoneInput = document.getElementById("phoneInput");
-      
-        phoneInput.addEventListener("input", function(event) {
+
+        phoneInput.addEventListener("input", function (event) {
           const inputValue = event.target.value;
           event.target.value = inputValue.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
         });
@@ -239,29 +248,59 @@ Número de pessoas: 50"></textarea>
           <input type="date" class="form-control" id="data">
         </div>
       </div>
-  
+
       <!-- Botão para enviar o formulário -->
       <button id="btnEnviar" type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </div>
-  
+
   <script>
-    
+    const formulario = document.getElementById("meuFormulario");
+
+    formulario.addEventListener("submit", function (event) {
+      event.preventDefault(); // Impede o comportamento padrão do envio do formulário
+
+      const dadosFormulario = {
+        nome: document.getElementById("nome").value,
+        email: document.getElementById("email1").value,
+        telefone: document.getElementById("phoneInput").value,
+        mensagem: document.getElementById("textarea1").value,
+        data: document.getElementById("data").value
+      };
+
+      fetch("http://localhost:8080/enviarFormulario", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dadosFormulario)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+        })
+        .catch(error => {
+          console.error("Erro ao enviar dados para a API:", error);
+        });
+    });
   </script>
-  
+
+
   <!------------------------- fim do forms -=---------------------------------------------------------------------------------------------->
 
   <!--------------------- Contato----------------------------------------------------------------------------------------------------------------->
 
-  <div id="contato" class="container-fluid d-flex flex-column justify-content-center align-items-center col-11 m-auto" style="height: 100vh;">
+  <div id="contato" class="container-fluid d-flex flex-column justify-content-center align-items-center col-11 m-auto"
+    style="height: 100vh;">
     <div style="display: flex; gap: 323px; margin-bottom: 10px;">
-      <a href="https://api.whatsapp.com/send?phone=5555999911268&text=Ol%C3%A1!%0A%0AEstou%20planejando%20um%20evento%20especial%20e%20estou%20interessado%20em%20contratar%20servi%C3%A7os%20de%20drinks,%20coquet%C3%A9is%20e%20bares%20para%20torn%C3%A1-lo%20ainda%20mais%20memor%C3%A1vel.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento.%0A%0AAqui%20est%C3%A3o%20alguns%20detalhes%20sobre%20o%20evento:%0ATipo%20de%20evento:%20%5Bcasamento/anivers%C3%A1rio/festa%20corporativa/etc.%5D%0AData%20do%20evento:%20%5Bdata%20desejada%20do%20evento%5D%0ALocal%20do%20evento:%20%5Blocal%20do%20evento%5D%0AN%C3%BAmero%20de%20convidados:%20%5Bn%C3%BAmero%20aproximado%20de%20convidados%5D%0A%0AEstou%20procurando%20uma%20variedade%20de%20op%C3%A7%C3%B5es%20de%20bebidas,%20desde%20coquet%C3%A9is%20cl%C3%A1ssicos%20at%C3%A9%20cria%C3%A7%C3%B5es%20exclusivas.%20Al%C3%A9m%20disso,%20adoraria%20saber%20sobre%20as%20op%C3%A7%C3%B5es%20de%20bares%20dispon%C3%ADveis%20e%20os%20servi%C3%A7os%20adicionais%20oferecidos,%20como%20equipe%20de%20bartenders,%20equipamentos%20e%20decora%C3%A7%C3%B5es.%0A%0APor%20favor,%20envie-me%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis,%20os%20pre%C3%A7os%20dos%20pacotes%20e%20qualquer%20outra%20informa%C3%A7%C3%A3o%20relevante%20para%20que%20eu%20possa%20avaliar%20e%20planejar%20o%20meu%20evento%20adequadamente.%0A%0AAgrade%C3%A7o%20antecipadamente%20pela%20sua%20aten%C3%A7%C3%A3o%20e%20aguardo%20ansiosamente%20para%20receber%20o%20seu%20or%C3%A7amento!%0A%0AAtenciosamente,%0A%5BSeu%20Nome%5D">
+      <a
+        href="https://api.whatsapp.com/send?phone=5555999911268&text=Ol%C3%A1!%0A%0AEstou%20planejando%20um%20evento%20especial%20e%20estou%20interessado%20em%20contratar%20servi%C3%A7os%20de%20drinks,%20coquet%C3%A9is%20e%20bares%20para%20torn%C3%A1-lo%20ainda%20mais%20memor%C3%A1vel.%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento.%0A%0AAqui%20est%C3%A3o%20alguns%20detalhes%20sobre%20o%20evento:%0ATipo%20de%20evento:%20%5Bcasamento/anivers%C3%A1rio/festa%20corporativa/etc.%5D%0AData%20do%20evento:%20%5Bdata%20desejada%20do%20evento%5D%0ALocal%20do%20evento:%20%5Blocal%20do%20evento%5D%0AN%C3%BAmero%20de%20convidados:%20%5Bn%C3%BAmero%20aproximado%20de%20convidados%5D%0A%0AEstou%20procurando%20uma%20variedade%20de%20op%C3%A7%C3%B5es%20de%20bebidas,%20desde%20coquet%C3%A9is%20cl%C3%A1ssicos%20at%C3%A9%20cria%C3%A7%C3%B5es%20exclusivas.%20Al%C3%A9m%20disso,%20adoraria%20saber%20sobre%20as%20op%C3%A7%C3%B5es%20de%20bares%20dispon%C3%ADveis%20e%20os%20servi%C3%A7os%20adicionais%20oferecidos,%20como%20equipe%20de%20bartenders,%20equipamentos%20e%20decora%C3%A7%C3%B5es.%0A%0APor%20favor,%20envie-me%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis,%20os%20pre%C3%A7os%20dos%20pacotes%20e%20qualquer%20outra%20informa%C3%A7%C3%A3o%20relevante%20para%20que%20eu%20possa%20avaliar%20e%20planejar%20o%20meu%20evento%20adequadamente.%0A%0AAgrade%C3%A7o%20antecipadamente%20pela%20sua%20aten%C3%A7%C3%A3o%20e%20aguardo%20ansiosamente%20para%20receber%20o%20seu%20or%C3%A7amento!%0A%0AAtenciosamente,%0A%5BSeu%20Nome%5D">
         <i class="fab fa-whatsapp" style="font-size: 150px; color:#39f040;"></i>
       </a>
       <a href="https://www.instagram.com/lusca_martinez/" class="text-primary">
         <i class="fab fa-instagram" style="font-size: 150px; color:#000000;"></i>
       </a>
-  
+
       <a href="https://www.facebook.com/lucas.martinez.1217727" class="text-primary">
         <i class="fab fa-facebook" style="font-size: 150px;"></i>
       </a>
@@ -269,18 +308,95 @@ Número de pessoas: 50"></textarea>
   </div>
 
 
-<div>
-  <footer style="background-color: #333;" class="page-footer font-snall blue p-5">
-    <div class="text-center ">
-      <a href="https://www.instagram.com/lusca_martinez/">© 2023 copyright: Lusca</a>
-    </div>
-  </footer>
-</div>
+  <div>
+    <footer style="background-color: #333;" class="page-footer font-snall blue p-5">
+      <div class="text-center ">
+        <a href="https://www.instagram.com/lusca_martinez/">© 2023 copyright: Lusca</a>
+      </div>
+    </footer>
+  </div>
 
-  
-  
+    <section id="login-section" class="vh-100" style="background-color: #9A616D; display: none;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+            <div class="card" style="border-radius: 1rem;">
+              <div class="row g-0">
+                <div class="col-md-6 col-lg-5 d-none d-md-block">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                    alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                </div>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 p-lg-5 text-black">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+                    <form>
+
+                      <div class="d-flex align-items-center mb-3 pb-1">
+                        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                        <span class="h1 fw-bold mb-0">Logo</span>
+                      </div>
+
+                      <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+
+                      <div class="form-outline mb-4">
+                        <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                        <label class="form-label" for="form2Example17">Email address</label>
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                        <label class="form-label" for="form2Example27">Password</label>
+                      </div>
+
+                      <div class="pt-1 mb-4">
+                        <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                      </div>
+
+                      <a class="small text-muted" href="#!">Forgot password?</a>
+                      <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
+                          style="color: #393f81;">Register here</a></p>
+                      <a href="#!" class="small text-muted">Terms of use.</a>
+                      <a href="#!" class="small text-muted">Privacy policy</a>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" id="closeLogin" style="position: absolute; top: 20px; right: 20px;">Fechar</a>
+    </section>
+    
+    <script>
+      const loginLink = document.getElementById("loginLink");
+      const loginSection = document.getElementById("login-section");
+      const closeLogin = document.getElementById("closeLogin");
+    
+      loginLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+    
+        loginSection.style.display = "block"; // Mostra a seção de login
+        document.body.style.overflow = "hidden"; // Impede o scroll da página
+      });
+    
+      closeLogin.addEventListener("click", function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+    
+        loginSection.style.display = "none"; // Oculta a seção de login
+        document.body.style.overflow = "auto"; // Restaura o scroll da página
+      });
+    </script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
