@@ -1,0 +1,84 @@
+
+  
+
+  <!---- Forms -------------------------------------------------------------------------------------------------------------------->
+  <div id="forms" class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;"
+    method="POST" action="/enviar">
+    <form id="meuFormulario" class="col-12 col-md-6 bg-dark text-white p-5">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="name" class="form-control" id="nome" placeholder="Lusca Martin">
+      </div>
+
+      <div class="mb-3">
+        <label for="email1" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email1" placeholder="email@email.com">
+      </div>
+
+      <div class="mb-3">
+        <label for="phoneInput" class="form-label">Número de telefone</label>
+        <input type="tel" class="form-control" id="phoneInput" name="phone" placeholder="(55) 99999-9999" maxlength="11"
+          required>
+        <small class="form-text text-muted">Informe apenas números (mínimo 10 dígitos e máximo 11 dígitos).</small>
+      </div>
+
+      <script>
+        const phoneInput = document.getElementById("phoneInput");
+
+        phoneInput.addEventListener("input", function (event) {
+          const inputValue = event.target.value;
+          event.target.value = inputValue.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+        });
+      </script>
+
+      <div class="mb-3">
+        <label for="textarea1" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="textarea1" rows="3" placeholder="Aniversário, formatura, inaguração... 
+Número de pessoas: 50"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label fot="inputDate" class="form-label"> Informe a data:</label>
+        <div class="form-group">
+          <input type="date" class="form-control" id="data">
+        </div>
+      </div>
+
+      <!-- Botão para enviar o formulário -->
+      <button id="btnEnviar" type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    const formulario = document.getElementById("meuFormulario");
+
+    formulario.addEventListener("submit", function (event) {
+      event.preventDefault(); // Impede o comportamento padrão do envio do formulário
+
+      const dadosFormulario = {
+        nome: document.getElementById("nome").value,
+        email: document.getElementById("email1").value,
+        telefone: document.getElementById("phoneInput").value,
+        mensagem: document.getElementById("textarea1").value,
+        data: document.getElementById("data").value
+      };
+
+      fetch("http://localhost:8080/enviarFormulario", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dadosFormulario)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+        })
+        .catch(error => {
+          console.error("Erro ao enviar dados para a API:", error);
+        });
+    });
+  </script>
+
+
+  <!------------------------- fim do forms -=---------------------------------------------------------------------------------------------->

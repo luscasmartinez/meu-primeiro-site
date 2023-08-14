@@ -1,0 +1,38 @@
+  <!-- Inicio do carrosel --------------------------------------------------------------------------------------------------------------------->
+
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/img1.jpeg" class="d-block w-100 img-fluid" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img2.jpg" class="d-block w-100 img-fluid" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img3.jpeg" class="d-block w-100 img-fluid" alt="Third slide">
+      </div>
+      <!-- Adicione mais imagens aqui, se necessário -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Fim do carrosel --------------------------------------------------------------------------------------------------------------------->
+
+
+  <script>
+    // Função para trocar as imagens do carrossel a cada 5 segundos
+    function trocarImagens() {
+      const carousel = new bootstrap.Carousel(document.getElementById('carousel'), {
+        interval: 5000, // Define o intervalo em milissegundos (5 segundos)
+      });
+    }
+
+    // Chama a função para trocar as imagens assim que a página carrega
+    document.addEventListener("DOMContentLoaded", trocarImagens);
+  </script>
