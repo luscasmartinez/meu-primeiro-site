@@ -50,34 +50,7 @@ Número de pessoas: 50"></textarea>
   </div>
 
   <script>
-    const formulario = document.getElementById("meuFormulario");
-
-    formulario.addEventListener("submit", function (event) {
-      event.preventDefault(); // Impede o comportamento padrão do envio do formulário
-
-      const dadosFormulario = {
-        nome: document.getElementById("nome").value,
-        email: document.getElementById("email1").value,
-        telefone: document.getElementById("phoneInput").value,
-        mensagem: document.getElementById("textarea1").value,
-        data: document.getElementById("data").value
-      };
-
-      fetch("http://localhost:8080/enviarFormulario", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(dadosFormulario)
-      })
-        .then(response => response.json())
-        .then(data => {
-          console.log(data);
-        })
-        .catch(error => {
-          console.error("Erro ao enviar dados para a API:", error);
-        });
-    });
+    
   </script>
 
 
